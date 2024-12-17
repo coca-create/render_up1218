@@ -288,7 +288,7 @@ def gr_components():
             outputs=[vtt_input,vtt_translated_content,vtt_translated_file,vtt_output_1,vtt_output_2,dummy_file,t7_dataframe]
         )
         def fn_j_clear():
-            return "","",""
+            return [],[],[]
         
         json_clear.click(
             fn=fn_j_clear,
