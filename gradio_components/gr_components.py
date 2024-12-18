@@ -50,7 +50,7 @@ def gr_components():
                 file_input = gr.File(label="Upload file", file_count="single")# ,file_types=['.txt','.srt','.vtt']
                 with gr.Column():
                     t4_excel_path=gr.File(label="Excel or Word file for Google translate",type="filepath",file_count="multiple")
-                    output_file = gr.File(label="Translated file" ,type='filepath')
+                    output_file = gr.File(label="Translated file" ,type='filepath',file_count="multiple")
 
             with gr.Row():
                 t4_clear_button=gr.Button("クリア")
